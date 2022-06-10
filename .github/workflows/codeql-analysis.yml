@@ -1,8 +1,10 @@
-name: "CodeQL Scan"
+name: "CodeQL Scan Pull"
 
 on:
-  push:
+  push: 
+    branches: [dev]
   pull_request:
+    branches: [master]
 
 jobs:
   analyze:
